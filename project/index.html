@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фазлиддин Носиров</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Переключатель языков -->
+  <div class="lang-switcher">
+    <button onclick="toggleLangMenu()">
+      <span id="current-flag">🇷🇺</span>
+    </button>
+    <div class="lang-menu" id="langMenu">
+      <div onclick="changeLanguage('uz')">🇺🇿 O'zbekcha</div>
+      <div onclick="changeLanguage('ru')">🇷🇺 Русский</div>
+      <div onclick="changeLanguage('en')">🇬🇧 English</div>
+    </div>
+  </div>
+
+  <!-- Контент -->
+  <main>
+    <h1 data-lang="title">Добро пожаловать</h1>
+    <nav>
+      <a href="index.html" data-lang="home">Главная</a>
+      <a href="biography.html" data-lang="bio">Биография</a>
+      <a href="crypto.html" data-lang="crypto">Криптовалюта</a>
+    </nav>
+  </main>
+
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

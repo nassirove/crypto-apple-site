@@ -1,0 +1,55 @@
+/* Базовые стили */
+body {
+  font-family: Arial, sans-serif;
+  transition: opacity 0.3s ease;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Переключатель языков */
+.lang-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.lang-switcher button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.lang-menu {
+  position: absolute;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+
+.lang-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.lang-menu div {
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-menu div:hover {
+  background: #f5f5f5;
+  border-radius: 4px;
+}
